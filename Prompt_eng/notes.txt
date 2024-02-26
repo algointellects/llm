@@ -1,0 +1,17 @@
+Prompt Engineering: Creating templates to give more desirable or useful results in accordance from an AI chatbot.
+eg- using chatgpt for a complicated task.
+
+5 principles of Prompt engineering
+
+0. Naive Prompt - Start with a simple prompt that describes the task you want done.
+1. Give Direction - Describe tge desired style in detail or reference a relavent persona.
+2. Specify Format - Define what rules to follow and the required structure of the response.
+3. Provide Examples - Insert a diverse set of test cases where the task was done correctly.
+4. Evaluate Quality - Identify errors and rate responses, testing what drives responses.
+5. Divide Labor - Split tasks into multiple steps, chained together for complex goals.
+
+# Hallucinations: When an AI chatbot makes up information which might not be factually accurate.
+
+To reduce hallucinations: Write "If you don't have a factual answer, just reply with 'Unable to reply', avoid making up a story and make sure that the output is reliable.
+
+Langchain: A python package to access llms (large language models)
