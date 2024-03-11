@@ -38,3 +38,20 @@ Standard Text model practices -
   Ask for context
   question rewriting
   progressive summarization
+
+Pydantic: Library for defining interfaces and types inside of python code
+
+JSON(Java Script Object Notation) - A text format that is language - independant can be used with any programming language.
+
+Ways of summerizing large amount of texts 
+->Chains can be used to break and interconnect large texts, eg: chain = load_summerize_chain(llm, chain_type = "stuff")
+-> Another method to summerize is by using map reducing technique, eg: chains.mapreduce import MapReduceChain
+
+LLMs can understand and can be enhanced by emotional stimuli.
+eg: Do some task like this or i'll lose my job
+
+Meta Prompting: Asking the AI model to generate a prompt for a desired output and then using the generated prompt for better results.
+Also can be used to generate code and recycling.
+
+Chain of Thought: Is a way of breaking a problem down into a series if interconnected problems.
+Reasoning gets involved, for example instead of giving the answer 5+6 equals 11, it will integrate the problem in a real life scenario like Sam has 5 apples and so on.
