@@ -55,3 +55,18 @@ Also can be used to generate code and recycling.
 
 Chain of Thought: Is a way of breaking a problem down into a series if interconnected problems.
 Reasoning gets involved, for example instead of giving the answer 5+6 equals 11, it will integrate the problem in a real life scenario like Sam has 5 apples and so on.
+
+# Rate Limits
+When you call the OpenAI API repeatedly, you may encounter error messages like 'Too many requests' or 'Rate limit error'. These error messages come from exceeding the API's rate limits.
+
+How to avoid rate limit errors
+Retrying with "exponential backoff"
+One easy way to avoid rate limit errors is to automatically retry requests with a random exponential backoff. Retrying with exponential backoff means performing a short sleep when a rate limit error is hit, then retrying the unsuccessful request. If the request is still unsuccessful, the sleep length is increased and the process is repeated. This continues until the request is successful or until a maximum number of retries is reached.
+
+This approach has many benefits:
+
+Automatic retries means you can recover from rate limit errors without crashes or missing data
+Exponential backoff means that your first retries can be tried quickly, while still benefiting from longer delays if your first few retries fail
+Adding random jitter to the delay helps retries from all hitting at the same time
+Note that unsuccessful requests contribute to your per-minute limit, so continuously resending a request won’t work.
+
